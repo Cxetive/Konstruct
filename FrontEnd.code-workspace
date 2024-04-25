@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "FrontEnd",
+			"path": "."
+		},
+		{
+			"name": "lightbox2-2.11.4",
+			"path": "../../Downloads/lightbox2-2.11.4/lightbox2-2.11.4"
+		}
+	],
+	"settings": {}
+}

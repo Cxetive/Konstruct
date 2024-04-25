@@ -1,0 +1,268 @@
+@import url(fonts/fonts.css);
+
+:root {
+    font-family: "CooperHewitt-book";
+    --h1-size: 64px;
+    --h2-size: 26px;
+    --h3-size: 22px;
+    --h4-size: 20px;
+    --h5-size: 18px;
+    --p-size: 16px;
+    --yellow-color: #f7c016;
+    --grey-background: #555;
+    --light-gray-background: #eee;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4
+{
+    font-size: var(--h4-size);
+}
+
+h5{
+    font-size: var(--h5-size);
+}
+
+p {
+    font-size: var(--p-size);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    /* display: flex; */
+}
+.container h1 {
+    display: flex;
+    align-content: center;
+    justify-self: flex-start;
+}
+#nav {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img {
+    width: 170px;
+    height: 38px;
+}
+#nav .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav .items a {
+    margin-left: 40px;
+}
+.hero {
+    background-image: url(img/header_afbeelding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0 0 0 / 50%);
+    background-blend-mode: darken;
+    height: 700px;
+    width: 100%;
+
+    .container{
+        display: flex;
+        height: 700px;
+        align-items: center;
+    }
+}
+a {
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+.items a{
+    color: var(#333);
+    transition: background-color 0.5s ease;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: var(--yellow-color);
+}
+.hero h1 {
+    font-size: var(--h1-size);
+    color: white;
+}
+
+.intro {
+    width: 100%;
+
+    background-color: white;
+
+    
+    
+    .introTeksten{
+        gap: 30px;
+        display: grid;
+        grid-template-areas: 'a b'
+                            'a c';
+    }
+    
+    .eersteTekst {
+        grid-area: a;
+    }
+
+    .tweedeTekst {
+        grid-area: b
+    }
+    .derdeTekst {
+        grid-area: c
+    }
+
+    p {
+
+        font-size: 16px;
+    }
+}
+
+.projecten {
+    width: 100%;
+
+    text-align: center;
+
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.calltoaction {
+    width: 100%;
+    height: 115px;
+    font-size: 19px;
+    color: white;   
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 14px 20px;
+        background-color: white;
+    }
+}
+
+.services {
+
+    text-align: center;
+    height: 350px;
+    
+
+    .servicesProjecten {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+
+    img{
+        max-height: 75px;
+        width: auto;
+    }
+}
+
+.calltoaction2 {
+      
+    background-image: url("img/banner-projects.jpg");
+    height: 500px;
+    background-size: cover;
+ 
+    .container{
+           display: flex;
+    align-items: center;
+    height: 500px;
+    }
+
+    .titel {
+        max-width: 600px;
+        color: white;
+        h2 {
+            line-height: 68px;
+            font-size: 54px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        a {
+            border-radius: 30px;
+            font-size: 14px;
+            padding: 14px 20px;
+            background-color: white;
+            display: inline-block;
+        }
+    }
+}
+
+.news {
+    .newsContainers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        justify-items: center;
+        height: 500px;
+        
+    }
+
+    p {
+        font-size: 12px;
+        color: var(--grey-background)   
+    }
+    img {
+        height: 300px;
+        width: auto;
+    }
+}
+
+.calltoaction3 {
+    background: #f7c016 url('img/achtergrond_wereld.png');
+    width: 100%;
+    height: 320px;
+    font-size: 19px;
+    background-color: var(--yellow-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+
+    a {
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 14px 20px;
+        background-color: white;
+    }
+}
